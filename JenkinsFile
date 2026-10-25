@@ -22,10 +22,10 @@ pipeline {
         stage('Run Playwright Tests') {
             steps {
                 bat "npx playwright test --grep '@Smoke'"
-            }
-             steps {
                 bat "npx playwright test --grep '@regression'"
             }
+
+            
         }
     }
 
