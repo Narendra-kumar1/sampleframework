@@ -21,8 +21,8 @@ pipeline {
 
         stage('Run Playwright Tests') {
             steps {
-                bat "npx playwright test --grep '@Smoke'"
-                bat "npx playwright test --grep '@regression'"
+                bat "npx playwright test --grep @Smoke"
+                bat "npx playwright test --grep @regression"
             }
 
             
