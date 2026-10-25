@@ -6,6 +6,6 @@ test('has title', async ({loginfixture}) => {
   console.log('test');
   console.log("reset2")
   await expect.soft(loginfixture.getByText("Logged In Successfully")).toBeVisible()
-
+  console.log("something")
 });
 
